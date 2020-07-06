@@ -29,7 +29,8 @@ def can_be_created_in_a_block (args = 0)
   # release_date == 1990
 
   Movie.create do |m|
-    m.create(args)
+    m.title = ""
+    m.release_date = 0
   end
 end
 
