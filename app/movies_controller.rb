@@ -6,7 +6,7 @@
 # end                              # end
 
 def can_be_instantiated_and_then_saved
-  movie = Movie.new.save
+  movie = Movie.create(title: "", release_date: 0, director: "", lead: "", in_theaters: true)
   movie.title = "This is a title."
   __
 end
